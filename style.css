@@ -1,0 +1,14 @@
+body{
+    background-size : cover;
+}
+
+.formlog{
+background: url(mountain.jpg);
+padding: 2%;
+margin-left: 52%;
+margin-top: 10%;
+}
+#heading3{
+    float: right;
+}
+

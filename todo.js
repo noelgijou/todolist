@@ -20,7 +20,7 @@ $(document).ready(function(){
         item += "<td>"+value.title+"</td>";
         item +="</tr>";
         
-        if (value.completed == false){
+        if (value.completed == true){
 
             item += "<td>"+'<input type="checkbox" disabled=true name="checkbox-' + value + 'id ="checkbox"' + value + '" value="' + value + '" class="custom" />' +"</td>";
         }else {
@@ -41,30 +41,30 @@ $(document).ready(function(){
             } else {
     
                 alert("less than 5 task is completed");
-                // alert("5 task not completed");
+                
             }
     
         });
 
 
-        
+        /*var ctask= 0;
         function myfun(y){
         var promise = new Promise(function (resolve){
             if(y == true){
-                tasknum++;
-                if(tasknum == 5){
+                ctask++;
+                if(ctask == 5){
                     resolve();
                 }
             }
             else{
-                tasknum--;
+                ctask--;
             }
         });
         promise
         .then(function(){
             alert("Congrats! You completed five Tasks.");
         })
-    }
+    }  */
 });
 });
 
