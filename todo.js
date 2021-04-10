@@ -32,24 +32,23 @@ $(document).ready(function(){
         $("#table").append(item);
 
 
-        // $('input[type="checkbox"]').click(function(){
+        $('input[type="checkbox"]').click(function(){
 
-        //     if (check = $("input:checkbox:checked").length) {
-        //         if (check == 5) {
-        //             alert(" 5 task is completed");
-        //         }
-        //     } else {
+            if (check = $("input:checkbox:checked").length) {
+                if (check == 5) {
+                    alert(" 5 task is completed");
+                }
+            } else {
     
-        //         alert("less than 5 task is completed");
-        //         // alert("5 task not completed");
-        //     }
+                alert("less than 5 task is completed");
+                // alert("5 task not completed");
+            }
     
         });
 
 
-        $('input[type="checkbox"]').click(function(y){
-        var tasknum = 0;
-        // function myfun(y){
+        
+        function myfun(y){
         var promise = new Promise(function (resolve){
             if(y == true){
                 tasknum++;
@@ -67,7 +66,7 @@ $(document).ready(function(){
         })
     }
 });
-);
+});
 
 
 
